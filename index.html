@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Viewport meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title> Stop Watch </title>
+
+    <!-- Description -->
+    <meta name="description" content="It is a online stop watch. The online stopwatch counts the time to the millisecond that passes after you click the (Start) button.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="online stop watch, time, hour, minute, second, millisecond.">
+
+    <!-- CSS style sheet -->
+    <link rel="stylesheet" href="stopwatch.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Lalezar&family=Yatra+One&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Facebook Open Graph Tag -->
+    <meta property="og:url" content="http://" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Stop Watch">
+    <meta property="og:description" content="It is a online stop watch. The online stopwatch counts the time to the millisecond that passes after you click the (Start) button" />
+    <meta property="og:image" content="http://" />
+
+    <!-- Twitter Card Tag -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@stopwatch" />
+    <meta name="twitter:title" content="Stop Watch" />
+    <meta name="twitter:description" content="It is a online stop watch. The online stopwatch counts the time to the millisecond that passes after you click the (Start) button." />
+    <meta name="twitter:image" content="https://" />
+
+    <!-- Script -->
+    <script defer src="stopwatch.js">
+
+    </script>
+    <!-- No Script -->
+    <noscript>
+        Please Enable JavaScript In Your Browser!
+    </noscript>
+
+</head>
+<body>
+    
+    <!-- main conainer -->
+    <div class="main-container">
+
+        <!-- heading and color buttons -->
+        <div class="change-bg-colors-main-div">
+
+              <h1 id="heading">
+                Stop Watch
+              </h1>
+
+               <!-- div to make responsive for less than 500px -->
+               <div class="change-colors-icon-500px">
+                    <i class="bi bi-list" id="line-bar-icon"></i>  <i class="bi bi-x-circle" id="cross-icon"></i>
+               </div>
+
+               <!-- END -->
+
+
+              <div class="change-bg-colors-sub-div" id="change-color-btn-parent">
+
+                <button type="button" class="change-colors" onclick="change_color_func('#9b59b6')"> <h5 class="change-colors-name" style="color: #9b59b6;"> Purple </h5> </button>
+                <button type="button" class="change-colors" onclick="change_color_func('#5f27cd')"> <h5 class="change-colors-name" style="color: #5f27cd;"> Blue </h5> </button> 
+                <button type="button" class="change-colors" onclick="change_color_func('#ff9f43')"> <h5 class="change-colors-name" style="color: #ff9f43;"> Yellow </h5> </button> 
+                <button type="button" class="change-colors" onclick="change_color_func('#34495e')"> <h5 class="change-colors-name" style="color: #34495e;"> Black </h5> </button> 
+
+              </div>
+
+        </div>
+
+
+        <!-- stop watch -->
+        <div class="stop-watch-div" id="stop-watch-background">
+
+            <div class="stop-watch-boxes"> <p id="hours"> 00 </p> <sup> hr </sup> </div>
+            <div class="stop-watch-boxes"> <p id="minutes"> 00 </p> <sup> min </sup> </div>
+            <div class="stop-watch-boxes"> <p id="seconds"> 00 </p> <sup> sec </sup> </div>
+            <div class="stop-watch-boxes"> <p id="miliseconds"> 00 </p> <sup> milisec </sup> </div>
+
+        </div>
+
+        
+        <!-- stop watch buttons -->
+        <div class="buttons-div" id="start-stop-reset-background">
+
+            <button type="button" class="buttons" id="start"> Start </button>
+            <button type="button" class="buttons" id="stop"> Stop </button>
+            <button type="reset" class="buttons" id="reset"> Reset </button>
+
+        </div>
+
+        <hr style="background-color: #D3D3D3; height: 4px;">
+
+        <!-- footer -->
+        <footer class="footer">
+
+            <div class="footer-childs site-links">
+                  <h4> Site Links: </h4>
+                    <a href="https://www.facebook.com/profile.php?id=100068943230031" target="_blank" class="anchor-tag-icons"> <span class="icons"> <i class="bi bi-facebook"></i> </span> <span class="icons-text facebook"> Facebook </span>  </a> <br>
+                    <a href="https://www.instagram.com/code.alert89442/" target="_blank" class="anchor-tag-icons"> <span class="icons"> <i class="bi bi-instagram"></i> </span> <span class="icons-text instagram"> Instagram </span> </a> <br>
+                    <a href="https://twitter.com/gamedevdotcom" target="_blank" class="anchor-tag-icons"> <span class="icons"> <i class="bi bi-twitter"></i> </span> <span class="icons-text twitter"> Twitter </span> </a> <br>
+                    <a href="https://www.linkedin.com/in/dummy-profile-76147311b/" target="_blank" class="anchor-tag-icons"> <span class="icons"> <i class="bi bi-linkedin"></i> </span> <span class="icons-text linked-in"> Linked-in </span> </a> <br>
+                    <a href="#" class="anchor-tag-icons"> <span class="icons"> <i class="bi bi-telephone"></i> </span> <span class="icons-text telephone"> (227) 743-7303 </span> </a> <br>
+                    <a href="https://www.youtube.com/channel/UCt7LrmRCCwJ6aRypI_7lmNQ" target="_blank" class="anchor-tag-icons"> <span class="icons"> <i class="bi bi-youtube"></i> </span> <span class="icons-text youtube"> Youtube </span> </a>
+            </div>
+
+
+            <div class="footer-childs description">
+                   <h4> Description: </h4>
+                   <p class="descrip-para">
+                    The device is used when time periods must be measured precisely and with a minimum of complications.
+                    Laboratory experiments and sporting events like sprints are good examples.
+                   </p>
+            </div>
+
+            <div class="footer-childs email-subs-div">
+                <h4> Email: </h4>
+                    <input type="email" id="email-input" placeholder="Email"> <button type="submit" class="subscribe" id="subs-button"> Subscribe </button>
+            </div>
+
+        </footer>
+
+
+        <!-- copy right -->
+        <div class="copy-right">
+            <strong> &#169 </strong> - 2023 - All Rights Of The Site Stop Watch Are Reserved By @Noem_AK.
+        </div>
+
+
+    </div>
+
+</body>
+</html>
